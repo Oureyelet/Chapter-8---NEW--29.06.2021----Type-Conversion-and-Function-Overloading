@@ -11,6 +11,10 @@ bool hasDuplicates(std::vector< std::pair<std::string, int> > pairList)
     return false;
 }
 
+using error_t = int;
+
+error_t printData(); // function prototype.
+
 int main()
 {
     std::cout << std::endl;
@@ -203,6 +207,35 @@ int main()
     std::cout << "Using type aliases for easier code maintenance" << '\n';
     std::cout << "/////////////////////////////////////////////////////" << '\n';
     /////////////////////////////////////////////////////////////////////////////
+    /*
+    if you use type aliases, then changing types becomes as simple as updating the type alias 
+    (e.g. from using studentID_t = short; to using studentID_t = long;).
+    */
+    
+    std::cout << std::endl;
+    /////////////////////////////////////////////////////////////////////////////
+    std::cout << "/////////////////////////////////////////////////////" << '\n';
+    std::cout << "Downsides and conclusion" << '\n';
+    std::cout << "/////////////////////////////////////////////////////" << '\n';
+    /////////////////////////////////////////////////////////////////////////////
+
+    std::cout << std::endl;
+    /////////////////////////////////////////////////////////////////////////////
+    std::cout << "/////////////////////////////////////////////////////" << '\n';
+    std::cout << "Quiz time" << '\n';
+    std::cout << "/////////////////////////////////////////////////////" << '\n';
+    /////////////////////////////////////////////////////////////////////////////
+    /*
+    Question #1
+
+    Given the following function prototype:
+
+    int printData();
+
+    Convert the int return value to a type alias named error_t. Include both the type alias 
+    statement and the updated function prototype.
+    */
+
 
     
 
@@ -210,8 +243,14 @@ int main()
 
 
 
+
     
 
 
+    return 0;
+}
+
+error_t printData()
+{
     return 0;
 }
